@@ -5,15 +5,14 @@ function appendToDisplay(input){
 }
 
 function clearDisplay(){
-    display.value = '';
+    display.value = "";
 }
 
-function ccalculate(){
-    try {
+function calculate(){
+    try{
         display.value = eval(display.value);
     }
-    catch {
+    catch(error){
         display.value = "Error";
     }
-    
 }
